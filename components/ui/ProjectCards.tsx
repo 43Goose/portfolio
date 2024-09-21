@@ -47,7 +47,7 @@ export default function ProjectCards() {
 
     return (
         <div className='relative w-full flex items-center justify-center'>
-            <div className='relative w-80 h-96 rounded-3xl border-4 border-accent shadow-md shadow-accent overflow-hidden md:w-4/5 md:h-[650px]'>
+            <div className='relative w-80 h-96 rounded-3xl border-4 border-accent shadow-md shadow-accent overflow-hidden md:w-4/5 md:h-[650px] lg:w-2/3'>
                 {projects.map((p, i) => (
                     <Card key={i} project={p} swiped={swiped} setSwiped={setSwiped} cardsLength={projects.length} />
                 ))}
